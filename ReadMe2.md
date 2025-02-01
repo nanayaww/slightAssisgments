@@ -1,6 +1,6 @@
-## Assignment 
+# Assignment 
 
-# 1. What will the following code snippet do when executed, and what bug can you identify?
+## 1. What will the following code snippet do when executed, and what bug can you identify?
 
 ```javascript
 for (var i = 0; i < 5; i++) {
@@ -11,7 +11,7 @@ for (var i = 0; i < 5; i++) {
 - Answer
 The code above is a for loop that has a condition f a declared variable i, is less than 5, and then increments i by 1. Each time the loop runs, it checks the value of i to see it is less than 5 and then logs the value of i to the console. However, the variable is declared with var which can cause the variable to i to be accessed and even reassigned in other parts of the code. var is also hoisted and this can cause problems.
 
-# 2. Explain the output of the following code snippet, and suggest a bug fix if necessary:
+## 2. Explain the output of the following code snippet, and suggest a bug fix if necessary:
 
 ```javascript
 const numbers = [1, 2, 3, 4, 5];
@@ -23,7 +23,7 @@ for (let i = 0; i < numbers.length; i++) {
 - Answer
 The code iterates over an array while the declared value i is less than the value of the length of the array. It then logs the value of each item in the array onto the console.
 
-# 3. Identify the problem in the code snippet below and provide a fix:
+## 3. Identify the problem in the code snippet below and provide a fix:
 
 ```javascript
 let fruits = ["apple", "banana", "cherry"];
@@ -41,7 +41,7 @@ for (let fruit of fruits) {
 }
 ```
 
-# 4. What will be the result of the following code, and what issue does it have?
+## 4. What will be the result of the following code, and what issue does it have?
 
 ```javascript
 let i = 0;
@@ -62,7 +62,7 @@ while (i < 5) {
 ```
 
 
-# 5. Explain the output of the code snippet and fix the bug if necessary:
+## 5. Explain the output of the code snippet and fix the bug if necessary:
 
 ```javascript
 for (let i = 0; i < 5; i++) {
@@ -73,7 +73,7 @@ for (let i = 0; i < 5; i++) {
 - Answer 
 The loop logs the value of i to the console every the loop runs. The loop ends when i is 5.
 
-# 6. What is the problem with the code snippet below, and how can it be corrected?
+## 6. What is the problem with the code snippet below, and how can it be corrected?
 
 ```javascript
 const numbers = [1, 2, 3, 4, 5];
@@ -97,7 +97,7 @@ for (const name of names) {
 - Answer
 There is no issue with this code, the for-of loop will log the name to the console.
 
-# 8. Identify the bug in the code snippet below and provide a corrected version:
+## 8. Identify the bug in the code snippet below and provide a corrected version:
 
 ```javascript
 let count = 10;
@@ -110,7 +110,7 @@ for (let i = 0; i < count; i++) {
 - Answer
 There is no bug in this code. Count variable holds a value of 10, the for loop checks to see if the value of i is less than the value of count. If it is, it logs "Iteration: + the value of i at the time of iteration" and then decrements count by 1. This goes goes on till i becomes greater than count and at that point the loop stops running.
 
-# 9. What will the output of the code below be, and what issue can you find?
+## 9. What will the output of the code below be, and what issue can you find?
 
 ```javascript
 const colors = ["red", "green", "blue"];
@@ -122,7 +122,7 @@ for (let color of colors) {
 - Answer
 The code will run just fine and ouput the each item in the colors array.
 
-# 10. Identify the problem in the code snippet and suggest a fix:
+## 10. Identify the problem in the code snippet and suggest a fix:
 
 ```javascript
 let numbers = [1, 2, 3, 4, 5];
@@ -138,7 +138,7 @@ The code above works just fine; the for loop iterates over the numbers array whi
 3, [1,2]
 
 
-# 11. Write a function that prints numbers from 1 to n. For multiples of 3, print "Fizz", for multiples of 5, print "Buzz", and for multiples of both 3 and 5, print "FizzBuzz". Otherwise, print the number itself.
+## 11. Write a function that prints numbers from 1 to n. For multiples of 3, print "Fizz", for multiples of 5, print "Buzz", and for multiples of both 3 and 5, print "FizzBuzz". Otherwise, print the number itself.
 
 - Answer
 ```javascript
@@ -177,7 +177,7 @@ fizzBuzz(15);
 // 14
 // FizzBuzz
 ```
-# 12. Write a function that takes a string as input and returns the number of vowels (a, e, i, o, u) in the string. Use a loop to iterate over the characters.
+## 12. Write a function that takes a string as input and returns the number of vowels (a, e, i, o, u) in the string. Use a loop to iterate over the characters.
 
 - Answer
 ```js
