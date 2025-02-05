@@ -15,6 +15,7 @@
        console.log("You are a minor");
      }
    }
+   checkAge(15); // You are a minor
    ```
 
 2. **Even or Odd**:  
@@ -30,6 +31,7 @@
        console.log("Odd");
      }
    }
+   isEven(5); // Odd
    ```
 
 3. **Grade Calculator**:  
@@ -57,6 +59,8 @@
        return "F";
      }
    }
+
+   console.log(getGrade(5)); // F
    ```
 
 4. **Traffic Light**:  
@@ -82,6 +86,8 @@
          break;
      }
    }
+
+   trafficLight("red"); // Stop
    ```
 
 5. **Largest of Three Numbers**:  
@@ -99,6 +105,8 @@
        console.log(c);
      }
    }
+
+   findLargest(1, 2, 3); // 3
    ```
 
 ---
@@ -114,6 +122,18 @@
    for (let i = 1; i <= 10; i++) {
      console.log(i);
    }
+   /**
+    * 1
+    * 2
+    * 3
+    * 4
+    * 5
+    * 6
+    * 7
+    * 8
+    * 9
+    * 10
+    */
    ```
 
 7. **Counting Down**:  
@@ -127,10 +147,23 @@
      num--;
      console.log(num);
    }
+
+   /**
+    * 10
+    * 9
+    * 8
+    * 7
+    * 6
+    * 5
+    * 4
+    * 3
+    * 2
+    * 1
+    */
    ```
 
 8. **Multiplication Table**:  
-   Write a function `printTable(n)` that takes a number `n` and prints its multiplication table (from 1 to 10).
+    Write a function `printTable(n)` that takes a number `n` and prints its multiplication table (from 1 to 10).
 
    ### Answer
 
@@ -140,6 +173,19 @@
        console.log(`${n} x ${i} = ${n * i}`);
      }
    }
+
+   /**
+   5 x 1 = 5
+   5 x 2 = 10
+   5 x 3 = 15
+   5 x 4 = 20
+   5 x 5 = 25
+   5 x 6 = 30
+   5 x 7 = 35
+   5 x 8 = 40
+   5 x 9 = 45
+   5 x 10 = 50
+   */
    ```
 
 9. **Sum of First N Natural Numbers**:  
@@ -157,6 +203,8 @@
      }
      return result;
    }
+
+   console.log(sumNumbers(3)) // 6
    ```
 
 10. **Do-While Example**:  
@@ -274,15 +322,16 @@
      Write a function `findMax(arr)` that takes an array of numbers and returns the largest number.
 
     ### Answer
-        ```js
-        function findMAx(arr) {
-        let largestNum = Math.max(...arr);
-        return largestNum
-        }
 
-    let numArr = [1,2,3,4,5,6,7,8,9]
+    ```js
+    function findMAx(arr) {
+      let largestNum = Math.max(...arr);
+      return largestNum;
+    }
 
-    console.log(findMAx(numArr)) // 9
+    let numArr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+    console.log(findMAx(numArr)); // 9
     ```
 
 ---
@@ -294,13 +343,14 @@
     - Declare a global variable `greeting = "Hello!"` and use it inside a function.
     - Inside the function, declare a local variable `name = "Alice"` and try to access it outside the function. What happens?
 
-    ### Answer 
-    ```js
-    let greeting = "Hello"
+    ### Answer
 
-    function greet () {
-        alert(greeting);
-    let name = "Alice";
+    ```js
+    let greeting = "Hello";
+
+    function greet() {
+      alert(greeting);
+      let name = "Alice";
     }
 
     console.log(name); // undefined
@@ -310,17 +360,17 @@
     Write a function that declares a variable inside a loop and tries to access it outside the loop. Does it work? Why or why not?
 
     ### Answer
+
     ```js
     function scopeLoop() {
-        for(let i = 1; i <= 3; i++) {
-            let myName = "Samuel"
-        }
-        return console.log(myName)
+      for (let i = 1; i <= 3; i++) {
+        let myName = "Samuel";
+      }
+      return console.log(myName);
     }
 
-    scopeLoop() // reference error
+    scopeLoop(); // reference error
     //This does not work because let is blocked scoped. Hence, a variable declared with it is not accessible out side its block.
-
     ```
 
 ---
@@ -329,15 +379,15 @@
 
 Write a function `isPrime(n)` that checks if a number is prime.
 
-### Answer 
+### Answer
+
 ```js
-        function isPrime(n) {
-        for (var i = 2; i < n; i++) { 
-          if(n % i === 0) return false; 
-        }
-        return n > 1;  
-    }
+function isPrime(n) {
+  for (var i = 2; i < n; i++) {
+    if (n % i === 0) return false;
+  }
+  return n > 1;
+}
 
- console.log(isPrime(1));  // returns false
-
+console.log(isPrime(1)); // returns false
 ```
