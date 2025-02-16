@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Form</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main id="container">
+      <div id="header">
+        <h1>Sign Up</h1>
+      </div>
+      <form action="">
+        <div class="formElement">
+          <label for="fullName">Fullname</label>
+          <input type="text" name="fullName" id="fullName" />
+          <span class="error" id="fullName-error">Enter your fullname</span>
+        </div>
+
+        <div class="formElement">
+          <label for="password">Password</label>
+          <input type="email" name="password" id="password" />
+          <span class="error" id="password-error">Enter a password</span>
+        </div>
+
+        <div class="formElement">
+          <label for="confirm-password">Confirm Password</label>
+          <input type="email" name="confirm-password" id="confirm-password" />
+          <span class="error" id="confirmPassword-error"
+            >Password does not match</span
+          >
+        </div>
+        <div class="formElement" id="submitButton">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+      </form>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
