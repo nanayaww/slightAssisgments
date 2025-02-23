@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 16px;
+  border: none;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  background-color: #d6eaf8;
+  font-family: 'Aleo';font-size: 22px;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
+  ;
+}
+
+main section {
+  padding: 0.5rem;
+}
+
+form {
+  position: absolute;
+  max-width: 15rem ;
+  width: 55%;
+  min-height: 8rem;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  gap: 10px;
+  background-color: #828485;
+  border-radius: 5px;
+  padding: 1rem;
+  background-color: #cac3cc
+  ;
+}
+
+.formDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.formDiv input {
+  padding: 0.5rem 1rem;
+  outline: none;
+  border-radius: 0.3rem;
+  border: 2px solid #5d6d7e;
+}
+.formDiv input:focus {
+  border: 2px solid #032952;
+}
+
+.formDiv textarea {
+  padding: 1rem;
+  min-width: 100%;
+  max-width: 100%;
+  outline: none;
+  border-radius: 0.3rem;
+  border: 2px solid #5d6d7e;
+
+}
+.formDiv textarea:focus {
+  border: 2px solid #033469;
+
+}
+
+#formButtons {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+#formButtons button {
+  width: 50%;
+  background-color: #e47e75;
+  border: 2px solid #f5b7b159;
+}
+
+
+
+h1 {
+  font-size: 1.8rem;
+  padding: 0.5rem;
+  text-align: center;
+  font-family: 'Aleo';
+  font-size: 2rem;
+  background-color: #a9dfbf
+  ;
+}
+
+button {
+  padding: 0.3rem 1rem;
+  border: 1px solid rgb(49, 43, 43);
+  border-radius: 0.3rem;
+  font-weight: 700;
+}
+
+button:hover {
+  box-shadow: #3c40434d 0px 1px 2px 0px, #3c404326 0px 2px 6px 2px;;
+}
+
+button:focus {
+  background-color: #3c40434d;
+  box-shadow: #3c40434d 0px 1px 2px 0px, #3c404326 0px 2px 6px 2px;;
+}
+
+#add_button {
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#add_button h2 {
+color: #2661cf
+;
+}
+
+#add_button button {
+  background-color: #6495ED;
+  border: 2px solid #aeb5c4;
+}
+
+#add_button button:hover {
+  color: #fff;
+  background-color: #6495ED;
+  border: 1px solid #2058be;
+}
+
+#menu_buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+#alltasks {
+  background-color: #FFBF00;
+  border: 2px solid #b9b4a5;
+}
+
+#pendingtasks {
+  background-color: #9FE2BF;
+  border: 2px solid #728f80;
+}
+
+#completedtasks {
+  background-color: #e95266;
+  border: 2px solid #776164f8;
+}
+
+#taskList {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  gap: 0.8rem;
+  padding: 1rem;
+}
+
+.tasks {
+  max-width: 10rem;
+  width: 40%;
+  min-height: 20vh;
+  border: 2px solid #7a7f85;
+  background-color: #708090;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.tasks:hover {
+  box-shadow: #3c40434d 0px 1px 2px 0px, #3c404326 0px 2px 6px 2px;
+}
+
+.tasks h2 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+#task_title {
+    width: 100%;
+    height: 20%;
+    border-bottom:1px solid rgba(0, 0, 0, 0.315);
+}
+
+#task_description {
+    height: 80%;
+    word-wrap: break-word;
+}
+
+.true h2 {
+  text-decoration: line-through;
+}
+
+#taskButtons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 1.5rem;
+}
+
+#taskButtons button {
+  padding: 0.5rem 0;
+  width: 20%;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.material-icons {
+  font-size: 5px;
+
+}
+
+
