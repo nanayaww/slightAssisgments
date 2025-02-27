@@ -196,9 +196,11 @@ color: #2661cf
     width: 100%;
     height: 20%;
     border-bottom:1px solid rgba(0, 0, 0, 0.315);
+    word-wrap: break-word;
 }
 
 #task_description {
+  font-size: 1rem;
     height: 80%;
     word-wrap: break-word;
 }
