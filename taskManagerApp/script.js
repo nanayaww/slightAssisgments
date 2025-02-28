@@ -189,11 +189,7 @@ function removeTaskFunction(task) {
 
 // Toggle Task function
 function toggleTaskFunction(task) {
-  if (task.completed === false) {
-    task.completed = true;
-  } else {
-    task.completed = false;
-  }
+  task.completed = !task.completed
 
   renderTasks();
   updateTaskCounts();

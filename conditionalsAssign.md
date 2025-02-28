@@ -2,7 +2,7 @@
 
 ## Part 1: Conditionals (if, else, switch) [5 Questions]
 
-1. **Age Verification**:  
+1. **Age Verification**:
    Write a function `checkAge(age)` that prints `"You are an adult"` if the age is 18 or above, otherwise print `"You are a minor"`.
 
    ### Answer
