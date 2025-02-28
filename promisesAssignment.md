@@ -3,7 +3,7 @@
 1. **Creating a Basic Promise** :
     Write a function fetchUserName() that returns a Promise. The Promise should resolve with the string "John Doe" after 2 seconds. Call this function and log the resolved value to the console.
 
-    ### Answer
+    ## Answer
 
 ```js
 function fetchUserName() {
@@ -60,7 +60,7 @@ function fetchUser(id, callback) {
 
 Rewrite this function to return a Promise instead of using a callback.
 
-### Answer
+## Answer
 
 ```js
 function fetchUser(id) {
@@ -79,7 +79,7 @@ function fetchUser(id) {
 4. **Using Async/ Await with a Promise**:
  Modify the function from Question 1 to use async/await instead of .then() to log the result
 
-### Answer
+## Answer
 ```js
 async function fetchUserName() {
     setTimeout(()=>{
