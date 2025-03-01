@@ -20,10 +20,12 @@ fetchUserName()
 );
 
 ```
+***
 
 2. **Handling Promise Rejection**:
     Create a function fetchData() that returns a Promise. The Promise should randomly either resolve with "Data fetched successfully" or reject with an error message "Failed to fetch data". Use .then() and .catch() to handle both cases and log the output.
 
+    ## Answer
 ```js
 const resRej = ['Data fetched successfully', 'Failed to fetch data'];
 
@@ -44,8 +46,11 @@ fetchData()
 )
 ```
 
+***
+
 3. **Converting Callbacks to promises**:
 You are given a function fetchUser(id, callback) that fetches user details asynchronously:
+
 ```js
 function fetchUser(id, callback) {
 
@@ -76,6 +81,8 @@ function fetchUser(id) {
 }
 ```
 
+***
+
 4. **Using Async/ Await with a Promise**:
  Modify the function from Question 1 to use async/await instead of .then() to log the result
 
@@ -90,12 +97,16 @@ async function fetchUserName() {
 fetchUserName()
 ```
 
+***
+
 5. **Chaining Multiple Promises**:
 Write two functions:
 
-1. getUserId() returns a Promise that resolves with 123 after 1 second.
-2. getUserDetails(id) returns a Promise that resolves with { id, name: "Alice" } after 2 seconds.
+ - getUserId() returns a Promise that resolves with 123 after 1 second.
+ - getUserDetails(id) returns a Promise that resolves with { id, name: "Alice" } after 2 seconds.
 Chain these functions so that calling getUserId() retrieves the user ID and then fetches the user details using getUserDetails(id). Log the final output.
+
+## Answer
 
 ```js
     function getUserId() {
@@ -124,6 +135,8 @@ getUserId()
 
 ```
 
+***
+
 6. **Error Handling in Async/Await**
 Modify the fetchData() function from Question 2 to use async/await. Use a try/catch block to handle errors.
 
@@ -150,6 +163,8 @@ async function fetchData() {
 
 fetchData();
 ```
+
+***
 
 7. **Using Promise.all()**
 Write three functions:
@@ -189,6 +204,8 @@ Promise.all([fetchUser(), fetchPost(), fetchComments()])
 )
 ```
 
+***
+
 8. **Implementing a Delay Function**
 Write a function delay(ms) that returns a Promise that resolves after ms milliseconds. Then use async/await to pause execution for 3 seconds before logging "Waited for 3 seconds".
 
@@ -210,6 +227,8 @@ async function newFunc() {
 newFunc()
 ```
 
+***
+
 9. **Sequential vs Parallel Execution**
 Create two functions:
 
@@ -221,6 +240,7 @@ Write two implementations:
 2. Run them in parallel using Promise.all().
 Compare the execution times.
 
+### Answer
 ```js
     function task1() {
     return new Promise((resolve, reject) => {
@@ -272,8 +292,12 @@ console.log(asyncExe-promiseAllExe);
 
 ```
 
+***
+
 10. **Implementing a Fetch Wrapper**
 Write an async function fetchData(url) that fetches data from the given URL using fetch(). Handle possible errors using try/catch and return "Error fetching data" if the request fails.
+
+## Answer
 
 ```js
     const url = 'https://jsonplaceholder.typicode.com/postss';
