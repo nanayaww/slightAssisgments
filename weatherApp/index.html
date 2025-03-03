@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main id="container">
+        <h1>My Weather App</h1>
+        <div id="getCity">
+            <div id="inputField">
+              <!-- <label for="cityNameInput">City Name:</label> -->
+            <input type="text" name="city" id="cityNameInput" placeholder="Enter a city name e.g 'Accra' ">
+            <img src="./location_on_20dp_E8EAED_FILL0_wght400_GRAD0_opsz20.svg" alt="location-icon" id="locationIcon">  
+            </div>
+            
+            <span id="error">Enter a valid city Name</span>
+            <button type="submit" id="submitBtn">Submit</button>
+        </div>
+
+        <div id="weatherContainer">
+            <div id="loader"></div>
+            <div id="weatherInfo"></div>
+        </div>
+
+
+    </main>
+    
+    <script src="./index.js"></script>
+</body>
+</html>

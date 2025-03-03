@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    font-size: 16px;
+    display: grid;
+    place-items: center;
+}
+
+main {
+    width: 30%;
+    min-width: 20rem;
+    min-height: 20rem;
+    background-color: rgb(214, 182, 94);
+    border-radius: 0.5rem;
+    padding: 0 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+#getCity {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+}
+
+#inputField {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+#cityNameInput {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #74e0ae96;
+    outline: none;
+}
+
+#locationIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #a39f9f;
+    border-radius: 50%;
+    
+}
+
+#error {
+    display: none;
+    font-size: 0.8rem;
+    color: red;
+}
+
+#submitBtn {
+    margin-top: 0.5rem;
+    width: 30%;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+    border: 1px solid #bb8d7faf;
+}
+
+#submitBtn:hover {
+    background-color: #c7bcb9;
+    border: 1px solid #bb8d7faf;
+}
+
+#weatherContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#weatherInfo {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#weatherInfo p {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+#loader {
+    display: none;
+    border: 5px solid #f3f3f3; /* Light grey */
+    border-top: 5px solid #020202; /* Blue */
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    animation: spin 2s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
