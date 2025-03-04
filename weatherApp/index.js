@@ -64,7 +64,8 @@ locationIcon.addEventListener('click', () => {
 });
 
 async function getGeo() {
-    const city = cityNameInput.value.trim();
+    try {
+        const city = cityNameInput.value.trim();
     if (!city) {
       errorField.style.display = "block";
     }
@@ -93,6 +94,10 @@ async function getGeo() {
     const lat = geoData[0].lat;
 
     return {lon,lat}
+    } catch (error) {
+        getError(error.message)
+    }
+    
 
 }
 
@@ -100,13 +105,15 @@ async function getGeo() {
 async function getWeather(lon , lat) {
   try {
 
-
     // Get Weather details
     const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
 
     const response = await fetch(url);
     console.log(response);
-
+    if (!response.ok) {
+        throw new Error("Bad response");
+        
+    }
     const data = await response.json();
     const newdata = getWeatherInfo(data);
 
